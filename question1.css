@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  /* Here I set the background color of the body to red externally. 
+    This has the lowest priority. Its styles will be applied unless 
+    overridden by inline or internal CSS.
+  */
+  background-color: red;
+}

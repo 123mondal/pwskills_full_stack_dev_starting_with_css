@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Webpage with Div Tags</title>
+
+    <!-- There are three different ways to apply css to a HTML document. -->
+
+    <!-- 1. Apply css from external stylesheet using link tag -->
+    <!-- In the external style.css file I have set the background color of the body to red. 
+    This has the lowest priority. Its styles will be applied unless 
+    overridden by inline or internal CSS. -->
+    <link rel="stylesheet" href="question1.css" />
+
+    <!-- 2. Apply css using internal css with "style" tag -->
+    <style>
+      /* Again I set body background color of the body to yellow.
+        This follows in order of importance. If there are conflicting paths between internal and external CSS,
+        the internal CSS will take precedence.
+        */
+      body {
+        background-color: yellow;
+      }
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .content {
+        min-height: 200px;
+      }
+      .header,
+      .content,
+      .footer {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      .dark {
+        background-color: #1a2a3a;
+        color: rgb(199, 199, 199);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .dark:hover {
+        background-color: #7eb9f5;
+        color: rgb(32, 32, 32);
+      }
+    </style>
+  </head>
+
+  <!-- 3. Applying inline css for changing background color to a rgb(34, 34, 34)
+   of the body using "style" attribute-->
+  <!-- I am third time changing the background color of the body using inline css.
+   This has the highest priority. It will override any styles
+   defined in internal or external stylesheets.
+   -->
+  <body style="background-color: rgb(34, 34, 34)">
+    <div class="container">
+      <div class="header dark">
+        <h1 style="margin-bottom: 10px">Tanu Mondal</h1>
+        <p>Starting with CSS - Assignment</p>
+      </div>
+      <div class="content dark">
+        <h2 style="margin-bottom: 10px">Description</h2>
+        <p style="margin-bottom: 10px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae
+          harum aperiam, hic ab eius quae eligendi, aut ex sunt, quidem
+          similique quia a dolores debitis voluptatibus accusamus dolorem
+          itaque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro beatae
+          harum aperiam, hic ab eius quae eligendi, aut ex sunt, quidem
+          similique quia a dolores debitis voluptatibus accusamus dolorem
+          itaque!
+        </p>
+      </div>
+      <div class="footer dark" style="min-height: 100px">
+        <h3 style="margin-bottom: 10px">Footer</h3>
+        <p>PW skills - Full Stack Development Mar’24</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121a27;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="checkbox"],
+select,
+textarea {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #6666ff;
+  background-color: #e0e0ff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Custom color palette */
+.form-container {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+input,
+select,
+textarea {
+  background-color: #f0f0f0;
+  border-color: #cccccc;
+  color: #333333;
+}
+textarea {
+  max-width: 300px;
+}
+
+button {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.subscribe-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.subscribe-checkbox label {
+  flex: 2;
+}
+.subscribe-checkbox input[type="checkbox"] {
+  flex: 1;
+}
+
+.form-container {
+  opacity: 0.9;
+}
